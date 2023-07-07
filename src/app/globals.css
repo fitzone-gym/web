@@ -211,6 +211,13 @@ section{
     color: var(--red);
 }
 
+@media screen and (max-width: 567px) {
+    .navbar .navbar_logo{
+        width:120px;
+        height:60px;
+    }
+}
+
 
 /*Hero area*/
 .hero-area-bg {
@@ -219,19 +226,6 @@ section{
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: overlay;
     min-height: 80dvh;
-}
-
-
-@media screen and (max-width: 767px) {
-    .hero-area-bg {
-        min-height: 85dvh;
-    }
-}
-
-@media screen and (max-width: 567px) {
-    .hero-area-bg {
-        min-height: 95dvh;
-    }
 }
 
 #hero-area {
@@ -291,7 +285,6 @@ section{
     text-transform: uppercase;
 }
 
-
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -346,6 +339,34 @@ section{
     transition: all .4s ease-out 0s;
     background-color: #ce2f3b;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-area-bg {
+        min-height: 85dvh;
+    }
+
+    #hero-area .container .banner-info {
+        font-size: 15px;
+    }
+
+    #hero-area .container .head-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .hero-area-bg {
+        min-height: 95dvh;
+    }
+
+    #hero-area .container .banner-info {
+        font-size: 15px;
+    }
+
+    #hero-area .container .head-title {
+        font-size: 2rem;
+    }
 }
 
 /*cources*/
@@ -430,6 +451,14 @@ section{
     .single_counter i {
         font-size: 60px;
         line-height: 55px;
+    }
+
+    #about-counter .container{
+        padding-top:60px;
+    }
+
+    #about-counter .container .single_counter{
+        margin-top: 50px;
     }
 }
 

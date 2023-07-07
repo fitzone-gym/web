@@ -6,7 +6,7 @@ function Counter() {
     <section id="about-counter" className="counter_area pt-0 pb-120 bg_cover">
       <div className="container">
         <div
-          className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-0.5"
+          className="grid grid-cols-2 gap-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-0.5"
           style={{ position: "relative" }}
         >
           <div className="">

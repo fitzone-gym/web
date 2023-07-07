@@ -36,29 +36,7 @@ function Trainers() {
                   style={{ height: "300px" }}
                 />
               </div>
-              <div className="team_content">
-                <ul className="social">
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-facebook-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-twitter-original"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-linkedin-original"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-instagram-original"></i>
-                    </a>
-                  </li>
-                </ul>
+              <div className="team_content pt-5">
                 <h5 className="team_name">Sarah Clerk</h5>
                 <p>Fitness Trainer and CEO</p>
               </div>
@@ -74,29 +52,7 @@ function Trainers() {
                   style={{ height: "300px" }}
                 />
               </div>
-              <div className="team_content">
-                <ul className="social">
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-facebook-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-twitter-original"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-linkedin-original"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-instagram-original"></i>
-                    </a>
-                  </li>
-                </ul>
+              <div className="team_content pt-5">
                 <h5 className="team_name">Sarah Clerk</h5>
                 <p>Fitness Trainer and CEO</p>
               </div>
@@ -112,29 +68,7 @@ function Trainers() {
                   style={{ height: "300px" }}
                 />
               </div>
-              <div className="team_content">
-                <ul className="social">
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-facebook-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-twitter-original"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-linkedin-original"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-instagram-original"></i>
-                    </a>
-                  </li>
-                </ul>
+              <div className="team_content  pt-5">
                 <h5 className="team_name">Sarah Clerk</h5>
                 <p>Fitness Trainer and CEO</p>
               </div>
@@ -150,29 +84,7 @@ function Trainers() {
                   style={{ height: "300px" }}
                 />
               </div>
-              <div className="team_content">
-                <ul className="social">
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-facebook-filled"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-twitter-original"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-linkedin-original"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-instagram-original"></i>
-                    </a>
-                  </li>
-                </ul>
+              <div className="team_content pt-5">
                 <h5 className="team_name">Sarah Clerk</h5>
                 <p>Fitness Trainer and CEO</p>
               </div>

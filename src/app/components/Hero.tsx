@@ -10,7 +10,7 @@ function Hero() {
       <div className="container">
         <div
           className="flex flex-row justify-center items-center "
-          style={{ paddingTop: "200px", position: "relative" }}
+          style={{ paddingTop: "250px", position: "relative" }}
         >
           <div className="lg:col-span-9 sm:col-span-12">
             <div

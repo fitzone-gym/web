@@ -1,3 +1,8 @@
+"use client";
+import React from "react";
+import * as Scroll from "react-scroll";
+import { Link } from "react-scroll";
+
 function Footer() {
   return (
     <section id="footer" className="footer_area pb-0">
@@ -28,16 +33,52 @@ function Footer() {
                 <h4 className="footer_title">Course</h4>
                 <ul className="link">
                   <li>
-                    <a href="javascript:void(0)">Fitness</a>
+                    <Link
+                      spy={true}
+                      offset={-50}
+                      to="courses"
+                      duration={300}
+                      smooth={true}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Fitness
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">Body Building</a>
+                    <Link
+                      spy={true}
+                      offset={-50}
+                      to="courses"
+                      duration={300}
+                      smooth={true}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Body Building
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">Yoga & Meditation</a>
+                    <Link
+                      spy={true}
+                      offset={-50}
+                      to="courses"
+                      duration={300}
+                      smooth={true}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Yoga & Meditation
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">Registration</a>
+                    <Link
+                      spy={true}
+                      offset={-50}
+                      to="pricing"
+                      duration={300}
+                      smooth={true}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Registration
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -47,22 +88,61 @@ function Footer() {
                 <h4 className="footer_title">Quick Link</h4>
                 <ul className="link">
                   <li>
-                    <a href="javascript:void(0)">Home</a>
+                    <Link
+                      spy={true}
+                      offset={-50}
+                      // to=""
+                      duration={300}
+                      smooth={true}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Home
+                    </Link>
+
+                    <a href="">Home</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">Courses</a>
+                    <Link
+                      spy={true}
+                      offset={-50}
+                      to="courses"
+                      duration={300}
+                      smooth={true}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Courses
+                    </Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">About</a>
+                    <Link
+                      spy={true}
+                      offset={-50}
+                      to="about"
+                      duration={300}
+                      smooth={true}
+                      style={{ cursor: "pointer" }}
+                    >
+                      About
+                    </Link>
                   </li>
-                  <li>
+                  {/* <li>
+                    <Link
+                      spy={true}
+                      offset={-50}
+                      to="courses"
+                      duration={300}
+                      smooth={true}
+                      style={{ cursor: "pointer" }}
+                    >
+                      Shedule
+                    </Link>
                     <a href="javascript:void(0)">Schedules</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
             <div className="">
-              <div className="footer_social mt-45">
+              {/* <div className="footer_social mt-45">
                 <h4 className="footer_title">Follow Us On</h4>
                 <ul className="social">
                   <li>
@@ -86,9 +166,9 @@ function Footer() {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
-              <div className="footer_download_app mt-4">
+              <div className="footer_download_app">
                 <h4 className="footer_title">Get the App</h4>
                 <ul className="download-app flex gap-1 mt-4">
                   <li>
