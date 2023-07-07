@@ -13,7 +13,7 @@ function Footer() {
               <div className="footer_info mt-45">
                 <h4 className="footer_title">Contact</h4>
                 <ul className="info">
-                  <li>Phone: 011-2455455</li>
+                  <li>Phone: 011 - 2818080</li>
                   <li>
                     Email:{" "}
                     <a
@@ -24,7 +24,7 @@ function Footer() {
                       fitZone@gmail.com
                     </a>
                   </li>
-                  <li>Location: 12/1 Nugegoda Road, Colombo 07.</li>
+                  <li>Location: 228A 2/1, Highlevel Road, Nugegoda.</li>
                 </ul>
               </div>
             </div>

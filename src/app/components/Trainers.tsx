@@ -17,8 +17,9 @@ function Trainers() {
             <div className="section_title text-center pb-16">
               <h3 className="title">Our Team</h3>
               <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore.
+                Meet Our Experts: Discover our team of dedicated fitness
+                professionals who are here to <br />support and inspire you on your
+                fitness journey.
               </p>
             </div>
           </div>

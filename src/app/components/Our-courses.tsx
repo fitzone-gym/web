@@ -16,9 +16,10 @@ function Our_courses(){
               <div className="section_title text-center pb-16">
                 <h3 className="title">Our Courses</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy <br />
-                  eirmod tempor invidunt ut labore.
+                  Explore our diverse range of courses tailored to meet various
+                  fitness interests and skill levels, providing you <br />
+                  with expert guidance and an opportunity to enhance your
+                  workout experience.
                 </p>
               </div>
             </div>
@@ -31,8 +32,9 @@ function Our_courses(){
                   <a href="javascript:void(0)">Fitness</a>
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur thedn bsadipscing
-                  elitr, sedsd diam nonumy eirmod tempor invidunt ut labore.
+                  Explore our diverse range of fitness courses designed to cater
+                  to all levels, helping you reach your fitness goals and
+                  unleash your full potential.
                 </p>
               </div>
             </div>
@@ -43,8 +45,9 @@ function Our_courses(){
                   <a href="javascript:void(0)">Body Building</a>
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur thedn bsadipscing
-                  elitr, sedsd diam nonumy eirmod tempor invidunt ut labore.
+                  Build and define your physique with our dedicated bodybuilding
+                  courses, designed to help you maximize muscle growth and
+                  achieve your ultimate strength goals.
                 </p>
               </div>
             </div>
@@ -55,8 +58,9 @@ function Our_courses(){
                   <a href="javascript:void(0)">Yoga & Meditation</a>
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur thedn bsadipscing
-                  elitr, sedsd diam nonumy eirmod tempor invidunt ut labore.
+                  Discover tranquility and harmony within through our
+                  rejuvenating Yoga & Meditation courses, crafted to nurture
+                  your mind, body, and soul for holistic well-being.
                 </p>
               </div>
             </div>
