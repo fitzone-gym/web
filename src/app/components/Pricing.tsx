@@ -1,3 +1,4 @@
+import Link from "next/link";
 function Pricing() {
   return (
     <section id="pricing" className="pricing_area pt-105 pb-120">
@@ -40,14 +41,14 @@ function Pricing() {
                   <ul>
                     <li>1 Yoga pass</li>
                     <li>1 Full body massage</li>
-                    <li>1 foot massage</li>
+                    <li>1 Foot massage</li>
                     <li>Kitchen</li>
                     <li>Washing room</li>
                   </ul>
                 </div>
               </div>
               <div className="pricing_btn">
-                <a href="javascript:void(0)">Purchase Now</a>
+                <a href="/Register?type=1-month">Purchase Now</a>
               </div>
             </div>
           </div>
@@ -85,7 +86,7 @@ function Pricing() {
               </div>
               <div className="pricing_btn pricing_btn_2">
                 <a
-                  href="javascript:void(0)"
+                  href="/Register?type=6-months"
                   style={{ backgroundColor: "var(--red)" }}
                 >
                   Purchase Now
@@ -124,7 +125,11 @@ function Pricing() {
                 </div>
               </div>
               <div className="pricing_btn">
-                <a href="javascript:void(0)">Purchase Now</a>
+                <a
+                  href="/Register?type=6-months"
+                >
+                  Purchase Now
+                </a>
               </div>
             </div>
           </div>
@@ -133,6 +138,5 @@ function Pricing() {
     </section>
   );
 }
-
 
 export default Pricing;
