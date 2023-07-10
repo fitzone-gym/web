@@ -98,8 +98,6 @@ function Footer() {
                     >
                       Home
                     </Link>
-
-                    <a href="">Home</a>
                   </li>
                   <li>
                     <Link

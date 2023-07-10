@@ -64,7 +64,7 @@ function Navbar() {
                   smooth={true}
                   onClick={() => setIsOpen(false)}
                 >
-                  Courses
+                  Packages
                 </Link>
               </li>
               <li>

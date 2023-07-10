@@ -48,7 +48,7 @@ function Pricing() {
                 </div>
               </div>
               <div className="pricing_btn">
-                <a href="/Register?type=1-month">Purchase Now</a>
+                <a href="/Register?type=month_1">Purchase Now</a>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ function Pricing() {
               </div>
               <div className="pricing_btn pricing_btn_2">
                 <a
-                  href="/Register?type=6-months"
+                  href="/Register?type=months_6"
                   style={{ backgroundColor: "var(--red)" }}
                 >
                   Purchase Now
@@ -125,11 +125,7 @@ function Pricing() {
                 </div>
               </div>
               <div className="pricing_btn">
-                <a
-                  href="/Register?type=6-months"
-                >
-                  Purchase Now
-                </a>
+                <a href="/Register?type=year">Purchase Now</a>
               </div>
             </div>
           </div>

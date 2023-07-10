@@ -14,7 +14,7 @@ function Our_courses(){
           <div className="flex flex-row justify-center items-center">
             <div className="lg:col-span-6 sm:col-span-8">
               <div className="section_title text-center pb-16">
-                <h3 className="title">Our Courses</h3>
+                <h3 className="title">Packages</h3>
                 <p>
                   Explore our diverse range of courses tailored to meet various
                   fitness interests and skill levels, providing you <br />
