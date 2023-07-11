@@ -972,3 +972,14 @@ section{
     color: black;
     margin: 0px
 }
+
+.amount{
+    /* padding-left: 20rem */
+    text-align:right;
+}
+
+/* @media (max-width: 767px) {
+    .packageAmount .amount{
+        padding-left: 10rem
+    }
+} */

@@ -118,7 +118,11 @@ function RegisterForm() {
         </nav>
       </section>
 
-      <section id="" className="contact_area pt-0" style={{paddingTop:"0px"}}>
+      <section
+        id=""
+        className="contact_area pt-0"
+        style={{ paddingTop: "0px" }}
+      >
         <div className="container">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="" style={{ paddingRight: "70px" }}>
@@ -139,9 +143,9 @@ function RegisterForm() {
                 </ul>
               </div>
               <hr className="pb-10" />
-              <div className="packageAmount">
+              <div className="packageAmount grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 pb-0.5">
                 Total Amount
-                <span className="amount" style={{ paddingLeft: "20rem" }}>
+                <span className="amount">
                   <span className="">{pack.price}</span>{" "}
                   <span
                     className=""
