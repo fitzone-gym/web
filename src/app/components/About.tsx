@@ -1,6 +1,6 @@
 import Image from "next/image";
 import image1 from "../images/hero-area.jpg";
-import image2 from "../images/hero-area1.jpg";
+// import image2 from "../images/about-image-1.jpg";
 import Counter from "./Counter";
 
 
@@ -24,7 +24,7 @@ function About() {
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-16">
             <div className="">
               <div className="single_courses mt-30">
-                <Image src={image2} alt="courses" className="about-image" />
+                <Image src={image1} alt="courses" className="about-image" />
               </div>
             </div>
             <div className=" ">
