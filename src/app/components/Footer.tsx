@@ -171,7 +171,7 @@ function Footer() {
                 <ul className="download-app flex gap-1 mt-4">
                   <li>
                     <a
-                      href=""
+                      href="https://expostore.pk"
                       className="flex gap-4"
                       style={{
                         border: "1px solid #e5e7eb",
@@ -180,12 +180,12 @@ function Footer() {
                       }}
                     >
                       <i class="bi bi-google-play"></i>
-                      <p>Android</p>
+                      <p style={{ color: "white" }}>Android</p>
                     </a>
                   </li>
                   <li>
                     <a
-                      href=""
+                      href="https://expostore.pk"
                       className="flex gap-4"
                       style={{
                         border: "1px solid #e5e7eb",
@@ -194,7 +194,7 @@ function Footer() {
                       }}
                     >
                       <i class="bi bi-apple"></i>
-                      <p>Iphone</p>
+                      <p style={{ color: "white" }}>Iphone</p>
                     </a>
                   </li>
                 </ul>

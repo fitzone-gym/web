@@ -3,18 +3,17 @@ import image1 from "../images/hero-area.jpg";
 import image2 from "../images/hero-area1.jpg";
 import image3 from "../images/hero-area2.jpg";
 
+
+
+
 function Our_courses(){
     return (
-      <section
-        id="courses"
-        className="courses_area pt-105"
-        style={{ backgroundColor: "#f3f4f3" }}
-      >
+      <section id="courses" className="courses_area">
         <div className="container">
           <div className="flex flex-row justify-center items-center">
             <div className="lg:col-span-6 sm:col-span-8">
               <div className="section_title text-center pb-16">
-                <h3 className="title">Packages</h3>
+                <h3 className="title">Activities</h3>
                 <p>
                   Explore our diverse range of courses tailored to meet various
                   fitness interests and skill levels, providing you <br />
@@ -24,44 +23,109 @@ function Our_courses(){
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 pb-0.5">
-            <div className="">
-              <div className="single_courses mt-30">
-                <Image src={image1} alt="courses" className="course-image" />
-                <h4 className="title">
-                  <a href="javascript:void(0)">Fitness</a>
-                </h4>
-                <p>
-                  Explore our diverse range of fitness courses designed to cater
-                  to all levels, helping you reach your fitness goals and
-                  unleash your full potential.
-                </p>
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-0.5">
+            {/* first one */}
+            <div className="min-h-10 flex justify-center items-center">
+              <div className="flex flex-col justify-between w-72 h-80 sm:w-96 h-96 bg-white bg-center text-gray-800 shadow-md overflow-hidden cursor-pointer activity1">
+                <div className="flex justify-between items-center ml-4 pr-8">
+                  <div className="bg-gray-800 text-white bg-opacity-95 shadow px-2 py-1 flex items-center font-bold text-xs rounded">
+                    Our Activities
+                  </div>
+                  <div className="bg-red-600 w-10 h-12 shadow flex flex-col-reverse p-2 text-center font-bold text-white rounded-b-full">
+                    01
+                  </div>
+                </div>
+                <div className="bg-white bg-opacity-95 shadow-md rounded-r-xl p-4 flex flex-col mr-4 mb-8">
+                  <h3 className="text-xl font-bold pb-2">Body Building</h3>
+                  <p className=" text-gray-500 text-sm">
+                    Build and define your physique with our dedicated
+                    bodybuilding
+                  </p>
+                  <div className="flex justify-between items-center">
+                    {/* <span className="text-gray-400 text-xs">
+                      Have a nice year...
+                    </span> */}
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="">
-              <div className="single_courses mt-30">
-                <Image src={image2} alt="courses" className="course-image" />
-                <h4 className="title">
-                  <a href="javascript:void(0)">Body Building</a>
-                </h4>
-                <p>
-                  Build and define your physique with our dedicated bodybuilding
-                  courses, designed to help you maximize muscle growth and
-                  achieve your ultimate strength goals.
-                </p>
+
+            {/* second one */}
+            <div className="min-h-10 flex justify-center items-center">
+              <div className="flex flex-col justify-between w-72 h-80 sm:w-96 h-96 bg-white bg-center text-gray-800 shadow-md overflow-hidden cursor-pointer activity4">
+                <div className="flex justify-between items-center ml-4 pr-8">
+                  <div className="bg-gray-800 text-white bg-opacity-95 shadow px-2 py-1 flex items-center font-bold text-xs rounded">
+                    Our Activities
+                  </div>
+                  <div className="bg-red-600 w-10 h-12 shadow flex flex-col-reverse p-2 text-center font-bold text-white rounded-b-full">
+                    02
+                  </div>
+                </div>
+                <div className="bg-white bg-opacity-95 shadow-md rounded-r-xl p-4 flex flex-col mr-4 mb-8">
+                  <h3 className="text-xl font-bold pb-2">Fitness</h3>
+                  <p className="text-gray-500 text-sm">
+                    Build and define your physique with our dedicated
+                    bodybuilding
+                  </p>
+                  <div className="flex justify-between items-center">
+                    {/* <span className="text-gray-400 text-xs">
+                      Have a nice year...
+                    </span> */}
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="">
-              <div className="single_courses mt-30">
-                <Image src={image3} alt="courses" className="course-image" />
-                <h4 className="title">
-                  <a href="javascript:void(0)">Yoga & Meditation</a>
-                </h4>
-                <p>
-                  Discover tranquility and harmony within through our
-                  rejuvenating Yoga & Meditation courses, crafted to nurture
-                  your mind, body, and soul for holistic well-being.
-                </p>
+
+            {/* third one */}
+            <div className="min-h-10 flex justify-center items-center">
+              <div className="flex flex-col justify-between w-72 h-80 sm:w-92 h-96 bg-white bg-center text-gray-800 shadow-md overflow-hidden cursor-pointer activity2">
+                <div className="flex justify-between items-center ml-4 pr-8">
+                  <div className="bg-gray-800 text-white bg-opacity-95 shadow px-2 py-1 flex items-center font-bold text-xs rounded">
+                    Our Activities
+                  </div>
+                  <div className="bg-red-600 w-10 h-12 shadow flex flex-col-reverse p-2 text-center font-bold text-white rounded-b-full">
+                    03
+                  </div>
+                </div>
+                <div className="bg-white bg-opacity-95 shadow-md rounded-r-xl p-4 flex flex-col mr-4 mb-8">
+                  <h3 className="text-xl font-bold pb-2">Yoga & Meditation</h3>
+                  <p className=" text-gray-500 text-sm">
+                    Build and define your physique with our dedicated
+                    bodybuilding
+                  </p>
+                  <div className="flex justify-between items-center">
+                    {/* <span className="text-gray-400 text-xs">
+                      Have a nice year...
+                    </span> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* third one */}
+            <div className="min-h-10 flex justify-center items-center">
+              <div className="flex flex-col justify-between w-72 h-80 sm:w-92 h-96 bg-white bg-center text-gray-800 shadow-md overflow-hidden cursor-pointer activity3">
+                <div className="flex justify-between items-center ml-4 pr-8">
+                  <div className="bg-gray-800 text-white bg-opacity-95 shadow px-2 py-1 flex items-center font-bold text-xs rounded">
+                    Our Activities
+                  </div>
+                  <div className="bg-red-600 w-10 h-12 shadow flex flex-col-reverse p-2 text-center font-bold text-white rounded-b-full">
+                    04
+                  </div>
+                </div>
+                <div className="bg-white bg-opacity-95 shadow-md rounded-r-xl p-4 flex flex-col mr-4 mb-8">
+                  <h3 className="text-xl font-bold pb-2">Happy Nowruz 1400</h3>
+                  <p className=" text-gray-500 text-sm">
+                    Nowruz is the Persian New Year, which begins on the Spring
+                    equinox, marking the first day of Farvardin, the first month
+                    of the Iranian solar calendar.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-400 text-xs">
+                      Have a nice year...
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -48,7 +48,7 @@ function Pricing() {
                 </div>
               </div>
               <div className="pricing_btn">
-                <a href="/Register?type=month_1">Purchase Now</a>
+                <a href="https://expostore.pk">Enroll Now</a>
               </div>
             </div>
           </div>
@@ -86,10 +86,10 @@ function Pricing() {
               </div>
               <div className="pricing_btn pricing_btn_2">
                 <a
-                  href="/Register?type=months_6"
+                  href="https://expostore.pk"
                   style={{ backgroundColor: "var(--red)" }}
                 >
-                  Purchase Now
+                  Enroll Now
                 </a>
               </div>
             </div>
@@ -125,7 +125,7 @@ function Pricing() {
                 </div>
               </div>
               <div className="pricing_btn">
-                <a href="/Register?type=year">Purchase Now</a>
+                <a href="https://expostore.pk">Enroll Now</a>
               </div>
             </div>
           </div>

@@ -18,15 +18,15 @@ function Trainers() {
               <h3 className="title">Our Team</h3>
               <p>
                 Meet Our Experts: Discover our team of dedicated fitness
-                professionals who are here to <br />support and inspire you on your
-                fitness journey.
+                professionals who are here to <br />
+                support and inspire you on your fitness journey.
               </p>
             </div>
           </div>
         </div>
       </div>
       <div className="container">
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 pb-0.5">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 pb-0.5">
           <div className="">
             <div className="single_team text-center">
               <div className="team_image">
@@ -34,7 +34,7 @@ function Trainers() {
                   src={trainer1}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "300px" }}
+                  style={{ height: "200px" }}
                 />
               </div>
               <div className="team_content pt-5">
@@ -43,14 +43,14 @@ function Trainers() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-sm-6">
+          <div className="col-lg-4 col-sm-3">
             <div className="single_team text-center">
               <div className="team_image">
                 <Image
                   src={trainer2}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "300px" }}
+                  style={{ height: "200px" }}
                 />
               </div>
               <div className="team_content pt-5">
@@ -59,14 +59,30 @@ function Trainers() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-sm-6">
+          <div className="col-lg-4 col-sm-3">
+            <div className="single_team text-center">
+              <div className="team_image">
+                <Image
+                  src={trainer2}
+                  alt="team"
+                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div className="team_content pt-5">
+                <h5 className="team_name">Sarah Clerk</h5>
+                <p>Fitness Trainer and CEO</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-sm-3">
             <div className="single_team text-center">
               <div className="team_image">
                 <Image
                   src={trainer3}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "300px" }}
+                  style={{ height: "200px" }}
                 />
               </div>
               <div className="team_content  pt-5">
@@ -75,14 +91,95 @@ function Trainers() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-sm-6">
+          <div className="col-lg-4 col-sm-3">
             <div className="single_team text-center">
               <div className="team_image">
                 <Image
                   src={trainer4}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "300px" }}
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div className="team_content pt-5">
+                <h5 className="team_name">Sarah Clerk</h5>
+                <p>Fitness Trainer and CEO</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="">
+            <div className="single_team text-center">
+              <div className="team_image">
+                <Image
+                  src={trainer1}
+                  alt="team"
+                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div className="team_content pt-5">
+                <h5 className="team_name">Sarah Clerk</h5>
+                <p>Fitness Trainer and CEO</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-sm-3">
+            <div className="single_team text-center">
+              <div className="team_image">
+                <Image
+                  src={trainer2}
+                  alt="team"
+                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div className="team_content pt-5">
+                <h5 className="team_name">Sarah Clerk</h5>
+                <p>Fitness Trainer and CEO</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-sm-3">
+            <div className="single_team text-center">
+              <div className="team_image">
+                <Image
+                  src={trainer2}
+                  alt="team"
+                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div className="team_content pt-5">
+                <h5 className="team_name">Sarah Clerk</h5>
+                <p>Fitness Trainer and CEO</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-sm-3">
+            <div className="single_team text-center">
+              <div className="team_image">
+                <Image
+                  src={trainer3}
+                  alt="team"
+                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                  style={{ height: "200px" }}
+                />
+              </div>
+              <div className="team_content  pt-5">
+                <h5 className="team_name">Sarah Clerk</h5>
+                <p>Fitness Trainer and CEO</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-sm-3">
+            <div className="single_team text-center">
+              <div className="team_image">
+                <Image
+                  src={trainer4}
+                  alt="team"
+                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                  style={{ height: "200px" }}
                 />
               </div>
               <div className="team_content pt-5">

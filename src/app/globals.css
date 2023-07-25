@@ -17,7 +17,7 @@
     --gray: #6c757d;
     --gray-dark: #343a40;
     --primary: #007bff;
-    --secondary: #6c757d;
+    --secondary: #dcdfe2;
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
@@ -29,10 +29,10 @@
 /*===========================
     1. COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700,900&display=swap");
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-style: normal;
     color: #585F6E;
@@ -83,9 +83,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
-    color: #292D36;
+    /* color: #292d36; */
+    color:black;
     margin: 0px;
 }
 
@@ -146,8 +147,8 @@ p {
 }
 section{
     display:block;
-    padding-top:150px;
-    padding-bottom: 150px;
+    padding-top:75px;
+    padding-bottom: 75px;
     align-items:center;
     justify-content: center;
 
@@ -160,7 +161,7 @@ section{
 }
 
 .section_title .title {
-    font-size: 44px;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-top: 10px;
 }
@@ -199,7 +200,8 @@ section{
 }
 
 .top-nav-collapse .nav-link {
-    color: #585f6e;
+    /* color: #585f6e; */
+    color:black;
 }
 
 .top-nav-collapse  .nav-link:hover {
@@ -211,6 +213,10 @@ section{
     color: var(--red);
 }
 
+.navbar .navbar_logo {
+    width: 120px;
+    height: 60px;
+}
 @media screen and (max-width: 567px) {
     .navbar .navbar_logo{
         width:120px;
@@ -220,10 +226,32 @@ section{
 
 
 /*Hero area*/
-.hero-area-bg {
+.activity1{
+    background: url(./images/trainer-01.jpg) no-repeat;
+    background-size: cover;
+    height:19rem;
+
+}
+.activity2{
+    background: url(./images/trainer-03.jpg) no-repeat;
+    background-size: cover;
+    height: 19rem;
+}
+.activity3 {
+    background: url(./images/trainer-02.jpg) no-repeat;
+    background-size: cover;
+    height: 19rem;
+}
+.activity4 {
     background: url(./images/hero-area.jpg) no-repeat;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6);
+    height: 19rem;
+}
+
+.hero-area-bg {
+    background: url(./images/FITZONE_hero.jpg) no-repeat;
+    background-size: cover;
+    /* background-color: rgba(0, 0, 0, 0.6); */
     background-blend-mode: overlay;
     min-height: 80dvh;
 }
@@ -410,8 +438,10 @@ section{
 
 /*about */
 .about-image{
-    height:380px;
-    width:90%;
+    height:100%;
+    width:80%;
+    border-radius:30;
+
 }
 
 /*===========================
@@ -514,10 +544,11 @@ section{
 }
 
 .single_team .team_image img {
-    width: 100%;
+    width: 90%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius:15px;
 }
 
 .single_team .team_content {
@@ -574,7 +605,7 @@ section{
 
 .single_team .team_content .team_name {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -586,6 +617,7 @@ section{
 
 .single_team .team_content p {
     margin-top: 10px;
+    font-size:13px;
 }
 
 .single_team:hover .social {
@@ -605,7 +637,7 @@ section{
 }
 
 .single_pricing .pricing_wrapper .pricing_header .title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
 }
 
@@ -624,7 +656,7 @@ section{
 
 .single_pricing .pricing_wrapper .pricing_content ul li {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 16px;
     color: #585F6E;
 }
 
@@ -727,7 +759,7 @@ section{
 
 .footer_title {
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -736,7 +768,7 @@ section{
 }
 
 .footer_info .info li {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     margin-top: 10px;
 }
@@ -746,7 +778,7 @@ section{
 }
 
 .footer_link .link li a {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     margin-top: 10px;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -1036,4 +1068,46 @@ section{
 .shadow-drop-2-center {
     -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+/**/
+body {
+    /* text-align: center; */
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: 0.5;
+}
+
+.hr-text:before {
+    content: "";
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 0.5em;
+    line-height: 1.5em;
+    color: #818078;
+    background-color: #fcfcfa;
+}
+
+p{
+    color:black
 }

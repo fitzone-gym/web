@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 
 import Image from "next/image";
-import logo from "../../images/fitzone_logo.png";
+import logo from "../../images/Logo.png";
 
 function RegisterForm() {
   const [firstName, setFirstName] = useState("");
@@ -109,9 +109,9 @@ function RegisterForm() {
   return (
     <>
       <section className="pb-0">
-        <nav className="navbar navbar-expand-lg bg-inverse scrolling-navbar top-nav-collapse">
+        <nav className="navbar navbar-expand-lg bg-inverse scrolling-navbar top-nav-collapse p-4">
           <div className="container">
-            <a href="/" className="navbar-brand">
+            <a href="/" className="navbar_logo">
               <Image src={logo} alt="" />
             </a>
           </div>
@@ -120,8 +120,8 @@ function RegisterForm() {
 
       <section
         id=""
-        className="contact_area pt-0"
-        style={{ paddingTop: "0px" }}
+        className="contact_area pt-12"
+        // style={{ paddingTop: "0px" }}
       >
         <div className="container">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">

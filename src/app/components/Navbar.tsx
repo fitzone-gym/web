@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import logo from "../images/fitzone_logo.png";
+import logo from "../images/Logo.png";
 
 import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
@@ -22,10 +22,7 @@ function Navbar() {
         // style={{ height: isOpen ? "fit-content" : "60px" }}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Image
-            src={logo}
-            className="navbar_logo"
-          />
+          <Image src={logo} className="navbar_logo" />
           <button
             data-collapse-toggle="navbar-default"
             type="button"
@@ -36,7 +33,7 @@ function Navbar() {
           >
             <FontAwesomeIcon icon={faBars} />
           </button>
-          
+
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white text-base ">
               <li>
@@ -59,20 +56,6 @@ function Navbar() {
                   activeClass="active-link"
                   spy={true}
                   offset={-50}
-                  to="courses"
-                  duration={300}
-                  smooth={true}
-                  onClick={() => setIsOpen(false)}
-                >
-                  Packages
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="nav-link"
-                  activeClass="active-link"
-                  spy={true}
-                  offset={-50}
                   to="about"
                   duration={300}
                   smooth={true}
@@ -81,6 +64,21 @@ function Navbar() {
                   About
                 </Link>
               </li>
+              <li>
+                <Link
+                  className="nav-link"
+                  activeClass="active-link"
+                  spy={true}
+                  offset={-50}
+                  to="courses"
+                  duration={300}
+                  smooth={true}
+                  onClick={() => setIsOpen(false)}
+                >
+                  Activities
+                </Link>
+              </li>
+
               <li>
                 <Link
                   className="nav-link"
@@ -106,7 +104,7 @@ function Navbar() {
                   smooth={true}
                   onClick={() => setIsOpen(false)}
                 >
-                  Pricing
+                  Packages
                 </Link>
               </li>
               <li>
