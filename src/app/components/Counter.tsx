@@ -33,9 +33,9 @@ function Counter() {
           </div>
           <div className="">
             <div className="single_counter text-center mt-40">
-              <i class="bi bi-trophy"></i>
-              <span className="count counter">45</span>
-              <p>Awards Won</p>
+              <i class="bi bi-alarm"></i>
+              <span className="count counter">16x24</span>
+              <p>Opening hours</p>
             </div>
           </div>
         </div>

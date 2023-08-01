@@ -16,7 +16,6 @@ function About() {
                   src={image1}
                   alt="courses"
                   className="about-image  rounded-2xl"
-                  style={{ height: "480px", width: "90%" }}
                 />
               </div>
             </div>

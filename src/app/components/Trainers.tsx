@@ -34,7 +34,7 @@ function Trainers() {
                   src={trainer1}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "200px" }}
+                  
                 />
               </div>
               <div className="team_content pt-5">
@@ -50,7 +50,7 @@ function Trainers() {
                   src={trainer2}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "200px" }}
+               
                 />
               </div>
               <div className="team_content pt-5">
@@ -66,7 +66,7 @@ function Trainers() {
                   src={trainer2}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "200px" }}
+                 
                 />
               </div>
               <div className="team_content pt-5">
@@ -82,7 +82,7 @@ function Trainers() {
                   src={trainer3}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "200px" }}
+              
                 />
               </div>
               <div className="team_content  pt-5">
@@ -98,7 +98,7 @@ function Trainers() {
                   src={trainer4}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "200px" }}
+                  
                 />
               </div>
               <div className="team_content pt-5">
@@ -115,7 +115,7 @@ function Trainers() {
                   src={trainer1}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "200px" }}
+                  
                 />
               </div>
               <div className="team_content pt-5">
@@ -131,7 +131,7 @@ function Trainers() {
                   src={trainer2}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "200px" }}
+                  
                 />
               </div>
               <div className="team_content pt-5">
@@ -147,7 +147,7 @@ function Trainers() {
                   src={trainer2}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "200px" }}
+                  
                 />
               </div>
               <div className="team_content pt-5">
@@ -163,7 +163,7 @@ function Trainers() {
                   src={trainer3}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "200px" }}
+                  
                 />
               </div>
               <div className="team_content  pt-5">
@@ -179,7 +179,7 @@ function Trainers() {
                   src={trainer4}
                   alt="team"
                   onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  style={{ height: "200px" }}
+                  
                 />
               </div>
               <div className="team_content pt-5">

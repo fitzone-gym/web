@@ -177,6 +177,7 @@ function Footer() {
                         border: "1px solid #e5e7eb",
                         padding: "10px",
                         width: "120px",
+                        borderRadius: "5px",
                       }}
                     >
                       <i class="bi bi-google-play"></i>
@@ -191,6 +192,7 @@ function Footer() {
                         border: "1px solid #e5e7eb",
                         padding: "10px",
                         width: "120px",
+                        borderRadius: "5px",
                       }}
                     >
                       <i class="bi bi-apple"></i>

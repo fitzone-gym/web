@@ -202,6 +202,7 @@ section{
 .top-nav-collapse .nav-link {
     /* color: #585f6e; */
     color:black;
+    font-weight:bold;
 }
 
 .top-nav-collapse  .nav-link:hover {
@@ -217,6 +218,10 @@ section{
     width: 120px;
     height: 60px;
 }
+.openCloseBar{
+    color:black;
+    font-size:22px;
+}
 @media screen and (max-width: 567px) {
     .navbar .navbar_logo{
         width:120px;
@@ -230,22 +235,26 @@ section{
     background: url(./images/trainer-01.jpg) no-repeat;
     background-size: cover;
     height:19rem;
+    border-radius:10px;
 
 }
 .activity2{
     background: url(./images/trainer-03.jpg) no-repeat;
     background-size: cover;
     height: 19rem;
+    border-radius: 10px;
 }
 .activity3 {
     background: url(./images/trainer-02.jpg) no-repeat;
     background-size: cover;
     height: 19rem;
+    border-radius: 10px;
 }
 .activity4 {
     background: url(./images/hero-area.jpg) no-repeat;
     background-size: cover;
     height: 19rem;
+    border-radius: 10px;
 }
 
 .hero-area-bg {
@@ -254,7 +263,18 @@ section{
     /* background-color: rgba(0, 0, 0, 0.6); */
     background-blend-mode: overlay;
     min-height: 80dvh;
+    /* animation: heroBgAnimation 10s infinite alternate; */
 }
+
+/* @keyframes heroBgAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(1.1);
+    }
+} */
 
 #hero-area {
     color: #fff;
@@ -544,7 +564,7 @@ section{
 }
 
 .single_team .team_image img {
-    width: 90%;
+    width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -961,6 +981,19 @@ section{
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
 }
 
+/*about*/
+.about-image{
+    height:480px;
+    width:90%;
+    align-items: center;
+}
+
+/*team*/
+.team_image img {
+    width: 100%;
+    height:200px;
+}
+
 /*Register form*/
 
 .form-check-label{
@@ -1110,4 +1143,84 @@ body {
 
 p{
     color:black
+}
+
+
+
+/* .slick-dots {
+    list-style: none;
+    display: flex !important;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+    background-color: white;
+    border: 2px solid #ffffff;
+    border-radius: 75%;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.slick-dots li button {
+    background-color: white;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 12px;
+    height: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #cccccc;
+    border-color: #cccccc;
+}
+
+.slick-dots li button:focus {
+    outline: none;
+} */
+
+
+
+/*resposive*/
+
+/*for mobile phone*/
+@media (max-width: 767px) {
+    .navbar .navbar_logo{
+        width:100px;
+        height:60px
+    }
+    .top-nav-collapse .nav-link{
+        line-height: 50px;
+    }
+    .head-title{
+        font-size:0.5rem;
+    }
+
+    .about-image{
+        align-items:center;
+        text-align:center;
+        justify-content: center;
+        height:270px;
+        margin-left:20px;
+    }
+    #about{
+        padding:20px;
+    }
+    p{
+        font-weight:500;
+    }
+    .single_pricing .pricing_wrapper .pricing_header .title{
+        font-size:1.2rem;
+        font-weight:600
+    }
+    .team_image img{
+        width:50%;
+        height:250px;
+    }
 }
