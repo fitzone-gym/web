@@ -194,7 +194,6 @@ section{
     animation-fill-mode: both;
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
-    background: #fff !important;
     position:fixed;
     width: 100%;
 }
@@ -231,32 +230,6 @@ section{
 
 
 /*Hero area*/
-.activity1{
-    background: url(./images/trainer-01.jpg) no-repeat;
-    background-size: cover;
-    height:19rem;
-    border-radius:10px;
-
-}
-.activity2{
-    background: url(./images/trainer-03.jpg) no-repeat;
-    background-size: cover;
-    height: 19rem;
-    border-radius: 10px;
-}
-.activity3 {
-    background: url(./images/trainer-02.jpg) no-repeat;
-    background-size: cover;
-    height: 19rem;
-    border-radius: 10px;
-}
-.activity4 {
-    background: url(./images/hero-area.jpg) no-repeat;
-    background-size: cover;
-    height: 19rem;
-    border-radius: 10px;
-}
-
 .hero-area-bg {
     background: url(./images/FITZONE_hero.jpg) no-repeat;
     background-size: cover;
@@ -266,12 +239,13 @@ section{
     /* animation: heroBgAnimation 10s infinite alternate; */
 }
 
+
 /* @keyframes heroBgAnimation {
     0% {
         transform: scale(1);
     }
 
-    90% {
+    100% {
         transform: scale(1.1);
     }
 } */
@@ -418,50 +392,44 @@ section{
 }
 
 /*cources*/
-.single_courses img {
-    border-radius: 5px;
-    width: 100%;
+.activity1 {
+    background: url(./images/trainer-01.jpg) no-repeat;
+    background-size: cover;
+    height: 19rem;
+    border-radius: 10px;
+
 }
 
-.single_courses .title a {
-    color: #292D36;
-    font-size: 30px;
-    font-weight: 700;
-    margin-top: 25px;
-    -webkit-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
+.activity2 {
+    background: url(./images/trainer-03.jpg) no-repeat;
+    background-size: cover;
+    height: 19rem;
+    border-radius: 10px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single_courses .title a {
-        font-size: 24px;
-    }
+.activity3 {
+    background: url(./images/trainer-02.jpg) no-repeat;
+    background-size: cover;
+    height: 19rem;
+    border-radius: 10px;
 }
 
-@media (max-width: 767px) {
-    .single_courses .title a {
-        font-size: 24px;
-    }
+.activity4 {
+    background: url(./images/hero-area.jpg) no-repeat;
+    background-size: cover;
+    height: 19rem;
+    border-radius: 10px;
 }
 
-.single_courses .title a:hover {
-    color: #CE2F3B;
-}
 
-.single_courses p {
-    margin-top: 15px;
-}
-
-.course-image{
-    height:300px;
-}
-
-/*about */
+/*===========================
+      04.ABOUT css 
+===========================*/
 .about-image{
-    height:100%;
-    width:80%;
     border-radius:30;
-
+    height: 480px;
+    width: 90%;
+    align-items: center;
 }
 
 /*===========================
@@ -569,6 +537,7 @@ section{
     background-repeat: no-repeat;
     background-position: center;
     border-radius:15px;
+    height: 200px;
 }
 
 .single_team .team_content {
@@ -658,7 +627,7 @@ section{
 
 .single_pricing .pricing_wrapper .pricing_header .title {
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 550;
 }
 
 .single_pricing .pricing_wrapper .pricing_header .price {
@@ -728,6 +697,46 @@ section{
 .position {
     color: white;
     padding-bottom: 30px;
+}
+
+
+.slick-dots {
+    list-style: none;
+    display: flex !important;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
+    color:transparent;
+    background-color: transparent;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+    /* border:4px solid black; */
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    background-color: white;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    width: 12px;
+    height: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.slick-dots li.slick-active button {
+    /* background-color: #cccccc;
+    border-color: #cccccc; */
+    border: 4px solid white;
+}
+
+.slick-dots li button:focus {
+    outline: none;
 }
 
 
@@ -859,140 +868,69 @@ section{
 
 
 
-/*hero*/
+/*resposive*/
 
-
-.header-hero {
-    position: relative;
-    z-index: 5;
-    height: 700px;
-}
-
-@media only screen and (min-width: 1400px) {
-    .header-hero {
-        height: 900px;
-    }
-}
-
-.header-hero::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(#292d36), color-stop(50%, rgba(69, 87, 128, 0.6)), to(#292d36));
-    background: linear-gradient(to right, #292d36 0%, rgba(69, 87, 128, 0.6) 50%, #292d36 100%);
-    opacity: 0.6;
-}
-
-.header-hero-content {
-    position: relative;
-    z-index: 9;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-hero-content {
-        padding-top: 150px;
-    }
-}
-
+/*for mobile phone*/
 @media (max-width: 767px) {
-    .header-hero-content {
-        padding-top: 120px;
+    .navbar .navbar_logo {
+        width: 100px;
+        height: 60px
+    }
+
+    .top-nav-collapse .nav-link {
+        line-height: 50px;
+    }
+
+    .head-title {
+        font-size: 0.5rem;
+    }
+
+    .about-image {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 270px;
+        margin-left: 20px;
+    }
+
+    #about {
+        padding: 20px;
+    }
+
+    p {
+        font-weight: 500;
+    }
+
+    .section_title .title {
+        font-size: 25px;
+    }
+
+    .single_pricing .pricing_wrapper .pricing_header .title {
+        font-size: 1.2rem;
+        font-weight: 600
+    }
+
+    .team_image img {
+        width: 50%;
+        height: 250px;
     }
 }
 
-.header-hero-content .header-title {
-    font-size: 60px;
-    font-weight: 700;
-    color: #fff;
-}
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .header-hero-content .header-title {
-        font-size: 50px;
-    }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-hero-content .header-title {
-        font-size: 50px;
-    }
-}
 
-@media (max-width: 767px) {
-    .header-hero-content .header-title {
-        font-size: 22px;
-    }
-}
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-    .header-hero-content .header-title {
-        font-size: 40px;
-    }
-}
 
-.header-hero-content .header-title span {
-    font-weight: 700;
-    display: contents;
-}
 
-.header-hero-content p {
-    margin-top: 30px;
-    color: #fff;
-}
 
-.header-hero-content ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
 
-@media (max-width: 767px) {
-    .header-hero-content ul li {
-        margin: 0px 6px;
-    }
-}
 
-.header-hero-content .main-btn {
-    margin-top: 40px;
-}
 
-.header-hero-content .main-btn:hover {
-    -webkit-box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-}
 
-.header-hero-content .main-btn.main-btn-2 {
-    line-height: 46px;
-    border: 2px solid #fff;
-    background-color: transparent;
-}
 
-@media (max-width: 767px) {
-    .header-hero-content .main-btn.main-btn-2 {
-        line-height: 36px;
-    }
-}
 
-.header-hero-content .main-btn.main-btn-2:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    -webkit-box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
-}
 
-/*about*/
-.about-image{
-    height:480px;
-    width:90%;
-    align-items: center;
-}
 
-/*team*/
-.team_image img {
-    width: 100%;
-    height:200px;
-}
 
 /*Register form*/
 
@@ -1146,81 +1084,3 @@ p{
 }
 
 
-
-/* .slick-dots {
-    list-style: none;
-    display: flex !important;
-    justify-content: center;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.slick-dots li {
-    margin: 0 5px;
-    background-color: white;
-    border: 2px solid #ffffff;
-    border-radius: 75%;
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-.slick-dots li button {
-    background-color: white;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    width: 12px;
-    height: 13px;
-    cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-.slick-dots li.slick-active button {
-    background-color: #cccccc;
-    border-color: #cccccc;
-}
-
-.slick-dots li button:focus {
-    outline: none;
-} */
-
-
-
-/*resposive*/
-
-/*for mobile phone*/
-@media (max-width: 767px) {
-    .navbar .navbar_logo{
-        width:100px;
-        height:60px
-    }
-    .top-nav-collapse .nav-link{
-        line-height: 50px;
-    }
-    .head-title{
-        font-size:0.5rem;
-    }
-
-    .about-image{
-        align-items:center;
-        text-align:center;
-        justify-content: center;
-        height:270px;
-        margin-left:20px;
-    }
-    #about{
-        padding:20px;
-    }
-    p{
-        font-weight:500;
-    }
-    .single_pricing .pricing_wrapper .pricing_header .title{
-        font-size:1.2rem;
-        font-weight:600
-    }
-    .team_image img{
-        width:50%;
-        height:250px;
-    }
-}

@@ -15,11 +15,33 @@ import { useRouter } from "next/router";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Function to check if the screen size is mobile
+  // const isMobileScreen = () => {
+  //   if (typeof window !== "undefined") {
+  //     const width: number = window.innerWidth;
+  //     console.log(width < 768);
+  //     return true;
+  //   }
+  //   return false;
+  // };
+
+  // console.log(isOpen);
+  // console.log(isMobileScreen());
+
+  // Style object to conditionally set display based on isOpen and mobile screen
+  const width: number = window.innerWidth;
+  const menuStyles = {
+    display: isOpen && width < 768 ? "block" : "none",
+  };
+
   return (
     <>
       <nav
         className="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar top-nav-collapse"
-        style={{ height: isOpen ? "fit-content" : "84px" }}
+        style={{
+          height: isOpen ? "fit-content" : "84px",
+        }}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Image src={logo} className="navbar_logo" />
@@ -34,12 +56,10 @@ function Navbar() {
             <FontAwesomeIcon icon={faBars} className="openCloseBar" />
           </button>
 
-          <div
-            className="w-full md:block md:w-auto"
-            id="navbar-default"
-            style={{ display: isOpen ? "block" : "none" }}
-          >
-            <ul className="font-medium flex flex-col p-4 md:p-0  md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white text-base ">
+          <div className="w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              className="font-medium flex flex-col p-4 md:p-0  md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white text-base"
+            >
               <li>
                 <Link
                   className="nav-link"
@@ -133,3 +153,7 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
+

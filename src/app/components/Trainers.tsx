@@ -1,10 +1,62 @@
+/*backend */
+"use client";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+interface Trainer {
+  id: string;
+  first_name: string;
+  last_name: string;
+}
 import Image from "next/image";
-import trainer1 from "../images/trainer-01.jpg";
-import trainer2 from "../images/trainer-02.jpg";
-import trainer3 from "../images/trainer-03.jpg";
-import trainer4 from "../images/trainer-04.jpg";
+
+// export const importImage = async (imageName) => {
+//   try {
+//     const image = await import(`../images/user-images/${imageName}`);
+//     return image.default; // Return the default export from the dynamically imported module
+//   } catch (error) {
+//     console.error('Error importing image:', error);
+//     return null;
+//   }
+// };
+
+
 
 function Trainers() {
+  const [trainerDetail, setTrainerDetails] = useState<Trainer[]>([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5400/landingPage/getTrainerDetails")
+      .then((response) => {
+        setTrainerDetails(response.data.data);
+        console.log(trainerDetail);
+      })
+      .catch((error) => console.error("error fetching trainer details"));
+  }, []);
+
+
+  // const [trainerImages, setTrainerImages] = useState({});
+
+  // console.log("trainers",trainerDetail);
+
+  // useEffect(() => {
+  //   // Load trainer images dynamically when the component mounts
+  //   const fetchImages = async () => {
+  //     const images = {};
+  //     for (const trainer of trainerDetail) {
+  //       const image = await importImage(trainer.profile_picture);
+  //       if (image) {
+  //         images[trainer.id] = image;
+  //       }
+  //     }
+  //     setTrainerImages(images);
+  //   };
+
+  //   fetchImages();
+  // }, [trainerDetail]);
+
+
   return (
     <section
       id="team"
@@ -27,167 +79,38 @@ function Trainers() {
       </div>
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 pb-0.5">
-          <div className="">
-            <div className="single_team text-center">
-              <div className="team_image">
-                <Image
-                  src={trainer1}
-                  alt="team"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  
-                />
+          {trainerDetail.length > 0 ? (
+            // console.log(trainerDetail.length),
+            trainerDetail.map((trainer) => (
+              <div className="" key={trainer.id}>
+                <div className="single_team text-center">
+                  <div className="team_image">
+                    {/* {console.log(trainer.id)} */}
+                    {/* {const image = await importImage(trainer.profile_picture);} */}
+                    {/* console.log("image name",image) */}
+                    {/* {import trainer_img from "../images/users/trainer.profile_picture"} */}
+                    {/* {const image = await import(`../images/user-images/${trainer.profile_picture}`);return image.default;} */}
+                    <Image
+                      src={`/images/user-images/${trainer.profile_picture}`}
+                      alt="team"
+                      onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                      width="450"
+                      height="45"
+                    />
+                  </div>
+                  <div className="team_content pt-5">
+                    <h5 className="team_name">
+                      {trainer.first_name}&nbsp;{trainer.last_name}
+                    </h5>
+                    {console.log(trainer.first_name)}
+                    <p>{trainer.expert_area}</p>
+                  </div>
+                </div>
               </div>
-              <div className="team_content pt-5">
-                <h5 className="team_name">Sarah Clerk</h5>
-                <p>Fitness Trainer and CEO</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-3">
-            <div className="single_team text-center">
-              <div className="team_image">
-                <Image
-                  src={trainer2}
-                  alt="team"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-               
-                />
-              </div>
-              <div className="team_content pt-5">
-                <h5 className="team_name">Sarah Clerk</h5>
-                <p>Fitness Trainer and CEO</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-3">
-            <div className="single_team text-center">
-              <div className="team_image">
-                <Image
-                  src={trainer2}
-                  alt="team"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                 
-                />
-              </div>
-              <div className="team_content pt-5">
-                <h5 className="team_name">Sarah Clerk</h5>
-                <p>Fitness Trainer and CEO</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-3">
-            <div className="single_team text-center">
-              <div className="team_image">
-                <Image
-                  src={trainer3}
-                  alt="team"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-              
-                />
-              </div>
-              <div className="team_content  pt-5">
-                <h5 className="team_name">Sarah Clerk</h5>
-                <p>Fitness Trainer and CEO</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-3">
-            <div className="single_team text-center">
-              <div className="team_image">
-                <Image
-                  src={trainer4}
-                  alt="team"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  
-                />
-              </div>
-              <div className="team_content pt-5">
-                <h5 className="team_name">Sarah Clerk</h5>
-                <p>Fitness Trainer and CEO</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="">
-            <div className="single_team text-center">
-              <div className="team_image">
-                <Image
-                  src={trainer1}
-                  alt="team"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  
-                />
-              </div>
-              <div className="team_content pt-5">
-                <h5 className="team_name">Sarah Clerk</h5>
-                <p>Fitness Trainer and CEO</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-3">
-            <div className="single_team text-center">
-              <div className="team_image">
-                <Image
-                  src={trainer2}
-                  alt="team"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  
-                />
-              </div>
-              <div className="team_content pt-5">
-                <h5 className="team_name">Sarah Clerk</h5>
-                <p>Fitness Trainer and CEO</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-3">
-            <div className="single_team text-center">
-              <div className="team_image">
-                <Image
-                  src={trainer2}
-                  alt="team"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  
-                />
-              </div>
-              <div className="team_content pt-5">
-                <h5 className="team_name">Sarah Clerk</h5>
-                <p>Fitness Trainer and CEO</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-3">
-            <div className="single_team text-center">
-              <div className="team_image">
-                <Image
-                  src={trainer3}
-                  alt="team"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  
-                />
-              </div>
-              <div className="team_content  pt-5">
-                <h5 className="team_name">Sarah Clerk</h5>
-                <p>Fitness Trainer and CEO</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-3">
-            <div className="single_team text-center">
-              <div className="team_image">
-                <Image
-                  src={trainer4}
-                  alt="team"
-                  onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                  
-                />
-              </div>
-              <div className="team_content pt-5">
-                <h5 className="team_name">Sarah Clerk</h5>
-                <p>Fitness Trainer and CEO</p>
-              </div>
-            </div>
-          </div>
+            ))
+          ) : (
+            <p>No data</p>
+          )}
         </div>
       </div>
     </section>

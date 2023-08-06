@@ -2,11 +2,32 @@
 import React from "react";
 import { useState } from "react";
 
+import axios from "axios";
+
 function Contact_Us() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleSubmit = (e:ReactFormEvent) =>{
+    console.log("call here")
+    e.preventDefault();
+
+    //send data to the backend
+    axios.post("http://localhost:5400/landingPage/contactUsFormSubmition", {name, email, subject, message})
+    .then((response)=>{
+      console.log("Data submit successfully to backend", response.data);
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+    })
+    .catch((error)=>{
+      console.log("Error submitting data", error);
+    })
+
+  }
 
   return (
     <section id="contact" className="contact_area pt-0">
@@ -78,7 +99,7 @@ function Contact_Us() {
                 </div>
 
                 <div className="">
-                  <textArea
+                  <input
                     className="mt-0
                     mb-8
                     block
@@ -90,11 +111,13 @@ function Contact_Us() {
                     type="text"
                     id="message"
                     placeholder="Message"
-                    onChange={(e) => setMessage(e.targer.value)}
+                    onChange={(e) => setMessage(e.target.value)}
                     style={{ height: "150px" }}
                   />
                 </div>
-                <div className="main-btn">Submit</div>
+                <button className="main-btn" onClick={handleSubmit}>
+                  Submit
+                </button>
               </form>
             </div>
           </div>

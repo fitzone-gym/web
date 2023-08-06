@@ -30,7 +30,7 @@ function Hero() {
                   duration={300}
                   smooth={true}
                 >
-                  Enroll Now
+                Enroll Now
                 </Link>
               </div>
             </div>
