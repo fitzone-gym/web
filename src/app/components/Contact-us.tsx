@@ -5,7 +5,8 @@ import { useState } from "react";
 import axios from "axios";
 
 function Contact_Us() {
-  const [name, setName] = useState("");
+  const [nam
+    , setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -126,7 +127,7 @@ function Contact_Us() {
             <div className="gmap_canvas">
               <iframe
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/place/Fitness+Zone+by+by+Dharmapala+Wijesiri/@6.8672651,79.8903374,17z/data=!3m1!4b1!4m6!3m5!1s0x3ae25b292ace74b5:0x7be8fde7aeb03297!8m2!3d6.8672598!4d79.8929177!16s%2Fg%2F11rlvg7w4d?entry=ttu"
                 frameborder="0"
                 scrolling="no"
                 marginheight="0"

@@ -114,17 +114,12 @@ function Our_courses(){
                   </div>
                 </div>
                 <div className="bg-white bg-opacity-95 shadow-md rounded-r-xl p-4 flex flex-col mr-4 mb-8">
-                  <h3 className="text-xl font-bold pb-2">Happy Nowruz 1400</h3>
+                  <h3 className="text-xl font-bold pb-2">Zumba</h3>
                   <p className=" text-gray-500 text-sm">
-                    Nowruz is the Persian New Year, which begins on the Spring
-                    equinox, marking the first day of Farvardin, the first month
-                    of the Iranian solar calendar.
+                    Help to burn around 300 – 900
+                    calories.
                   </p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-400 text-xs">
-                      Have a nice year...
-                    </span>
-                  </div>
+                  
                 </div>
               </div>
             </div>

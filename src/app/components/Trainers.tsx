@@ -7,6 +7,7 @@ interface Trainer {
   id: string;
   first_name: string;
   last_name: string;
+  expert_area:string;
 }
 import Image from "next/image";
 
@@ -79,6 +80,7 @@ function Trainers() {
       </div>
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 pb-0.5">
+          
           {trainerDetail.length > 0 ? (
             // console.log(trainerDetail.length),
             trainerDetail.map((trainer) => (
