@@ -5,8 +5,7 @@ import { useState } from "react";
 import axios from "axios";
 
 function Contact_Us() {
-  const [nam
-    , setName] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
