@@ -17,11 +17,12 @@ function Contact_Us() {
     //send data to the backend
     axios.post("http://localhost:5400/landingPage/contactUsFormSubmition", {name, email, subject, message})
     .then((response)=>{
-      console.log("Data submit successfully to backend", response.data);
       setName("");
       setEmail("");
       setSubject("");
       setMessage("");
+      console.log("Data submit successfully to backend", response.data);
+      
     })
     .catch((error)=>{
       console.log("Error submitting data", error);

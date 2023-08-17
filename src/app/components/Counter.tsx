@@ -13,6 +13,7 @@ function Counter() {
   const [memberCount, setMemberCount] = useState<number>(0);
   const [courseCompleteMemberCount, setCourseCompleteMemberCount] =useState<number>(0);
   const [trainerCount, setTrainerCount] =useState<number>(0);
+  const [complaintCount, setComplaintCount] = useState<number>(0);
 
   /*set member count to the variable */
   useEffect(() => {
@@ -24,6 +25,7 @@ function Counter() {
           setMemberCount(data.workingMembers);
           setCourseCompleteMemberCount(data.courseCompleteMembers);
           setTrainerCount(data.workingTrainers);
+          setComplaintCount(data.feedbackCount);
         }
       })
       .catch((error) => console.error("Error fetching members:", error));
@@ -62,8 +64,8 @@ function Counter() {
           <div className="">
             <div className="single_counter text-center mt-40">
               <i class="bi bi-alarm"></i>
-              <span className="count counter">16x24</span>
-              <p>Opening hours</p>
+              <span className="count counter">{complaintCount}</span>
+              <p>Complaints</p>
             </div>
           </div>
         </div>
